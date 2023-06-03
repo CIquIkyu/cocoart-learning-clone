@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body class="text-gray-900">
+    <nav class="relative bg-amber-400">
+      <div
+        class="container flex items-center justify-between px-6 py-4 mx-auto"
+      >
+        <!-- logo -->
+        <img
+          class="w-48"
+          src="https://uploads-ssl.webflow.com/60f35132d5febb6f03ec9d7a/637a3904e86a45e79e450a65_COCOCART_WORDMARK_BLACKANDWHITE.svg"
+          alt="Logo"
+        />
+        <!-- hamburger menu -->
+
+        <button class="btn lg:hidden burger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- dropdown menu -->
+        <div
+          class="absolute left-0 z-10 w-full h-0 overflow-hidden transition-all bg-white top-full dropdown"
+        >
+          <ul>
+            <li><a class="block py-4 nav-link" href="#">Home</a></li>
+            <li><a class="block py-4 nav-link" href="#">Resources</a></li>
+            <li>
+              <a class="block py-4 nav-link" href="#">We are hiring!</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hidden lg:flex">
+          <ul class="flex items-center gap-8">
+            <li><a class="nav-link" href="#">Home</a></li>
+            <li><a class="nav-link" href="#">Resources</a></li>
+            <li><a class="nav-link" href="#">We are hiring!</a></li>
+            <!-- <li class="relative group">
+          <a class="hover:text-indigo-500" href="#">Pages</a>
+          
+          <div class="absolute invisible w-48 p-4 shadow opacity-0 group-hover:visible group-hover:opacity-100">
+            <ul>
+              <li><a class="block py-4 hover:text-indigo-500" href="#">Portfolio Details Page</a></li>
+              <li><a class="block py-4 hover:text-indigo-500" href="#">Blog Grids Page</a></li>
+              <li><a class="block py-4 hover:text-indigo-500" href="#">Blog Details Page</a></li>
+            </ul>
+          </div>
+        </li> -->
+          </ul>
+
+          <div class="btn-wrapper">
+            <button class="btn">Log In</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="bg-amber-400 hero-section">
+      <div class="container flex px-6 mx-auto">
+        <!-- left -->
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          class="flex flex-col items-center py-8 text-center md:w-4/5 sm:text-left"
+        >
+          <h1 class="text-3xl font-bold sm:text-7xl">
+            Create a simple, beautiful store in minutes.
+          </h1>
+          <p class="mt-8 text-2xl font-light sm:text-5xl">
+            No code. No app required.
+          </p>
+          <!-- html symbol -->
+          <button class="mt-8 btn">start my website&mdash;it's free</button>
+
+          <div class="flex gap-2 mt-8">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="white"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+              />
+            </svg>
+          </div>
+          <p class="block mt-4">Loved by 30,000+ businesses</p>
+        </div>
+        <!-- right -->
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          class="hidden pl-12 md:block"
+        >
+          <img
+            src="https://uploads-ssl.webflow.com/60f35132d5febb6f03ec9d7a/60fc05b036a77a95a30ed20b_hero-video.gif"
+            alt="Preview hero image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-12 md:mt-72">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="500"
+        class="container px-6 py-10 mx-auto text-center md:w-2/3"
+      >
+        <h2 class="text-3xl font-bold sm:text-7xl">
+          Cococart is made for local businesses.
+        </h2>
+        <p class="mt-8 text-xl font-light leading-8">
+          We're on a mission to transform independent businesses to accept
+          online orders. Cococart empowers small businesses to manage their own
+          sales without apps or marketplaces that charge unsustainable fees and
+          commissions.
+        </p>
+
+        <div class="flex justify-center mt-8">
+          <div class="btn-wrapper">
+            <button class="btn">See example</button>
+          </div>
+        </div>
+
+        <div
+          class="grid max-w-3xl grid-cols-2 gap-8 mx-auto mt-8 sm:grid-cols-4"
+        >
+          <img class="business-logo" src="images/businesses/1.png" alt="" />
+          <img class="business-logo" src="images/businesses/2.png" alt="" />
+          <img class="business-logo" src="images/businesses/3.png" alt="" />
+          <img class="business-logo" src="images/businesses/4.png" alt="" />
+          <img class="business-logo" src="images/businesses/5.png" alt="" />
+          <img class="business-logo" src="images/businesses/6.png" alt="" />
+          <img class="business-logo" src="images/businesses/7.png" alt="" />
+          <img class="business-logo" src="images/businesses/8.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-6 bg-white">
+      <!-- flex-direction: row  -->
+      <div
+        data-aos="fade-up"
+        data-aos-duration="500"
+        class="container flex flex-col px-6 mx-auto text-center lg:px-32 sm:flex-row"
+      >
+        <!-- left -->
+        <div class="flex flex-col justify-center px-6 py-8">
+          <h3 class="text-5xl font-extrabold">
+            Automate orders from social media.
+          </h3>
+          <p class="mt-8 text-2xl font-light">
+            Managing orders is now easier than ever. No more replying to DMs.
+            Don't miss out on orders from customers.
+          </p>
+        </div>
+        <!-- right -->
+        <div class="px-6">
+          <img
+            src="https://uploads-ssl.webflow.com/60f35132d5febb6f03ec9d7a/60fc86e841780d0802727e90_2-2.png"
+            alt="social orders"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-6 bg-white">
+      <div
+        data-aos="zoom-out"
+        class="container flex flex-col-reverse px-6 mx-auto text-center lg:px-32 sm:flex-row"
+      >
+        <!-- left -->
+        <div class="px-6">
+          <img
+            src="https://uploads-ssl.webflow.com/60f35132d5febb6f03ec9d7a/60fc810de761ae96f71838db_1-2.png"
+            alt="social orders"
+          />
+        </div>
+        <!-- right -->
+        <div class="flex flex-col justify-center px-6 py-8">
+          <h3 class="text-5xl font-extrabold">
+            Simple to set up. Impossible to mess up.
+          </h3>
+          <p class="mt-8 text-2xl font-light">
+            No learning curve. Gorgeous. Blazingly fast. And comes with all the
+            features you need.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- payments section -->
+    <section class="pt-6 bg-white">
+      <!-- flex-direction: row  -->
+      <div
+        class="container flex flex-col px-6 mx-auto text-center lg:px-32 sm:flex-row"
+      >
+        <!-- left -->
+        <div class="flex flex-col justify-center px-6 py-8 sm:w-1/2">
+          <h3 class="text-5xl font-extrabold">Accept all kinds of payments.</h3>
+          <p class="mt-8 text-2xl font-light">
+            Automatically collect payments by credit and debit card, bank
+            transfer, Venmo, PayNow, GCash, and more.
+          </p>
+        </div>
+        <!-- right -->
+        <div class="px-6 sm:w-1/2">
+          <img
+            src="https://uploads-ssl.webflow.com/60f35132d5febb6f03ec9d7a/60f8a6a86a773f747595dccd_payments.png"
+            alt="payments"
+          />
+        </div>
+      </div>
+      <div class="flex justify-center mt-6">
+        <div class="btn-wrapper">
+          <button class="btn">Sign Up for Free</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs section -->
+    <section class="py-6 bg-white">
+      <div class="max-w-3xl px-6 mx-auto">
+        <h3 class="text-5xl font-bold text-center">FAQs</h3>
+
+        <div class="faq-container">
+          <article class="mt-8">
+            <div
+              class="flex items-center justify-between gap-2 p-4 border border-black cursor-pointer faq-title"
+            >
+              <p class="text-xl font-bold">How much does it cost?</p>
+              <i class="fa-solid fa-circle-plus faq-icon"></i>
+            </div>
+            <div class="p-4 border border-t-0 border-black faq-content one">
+              Cococart is free for small businesses! You can buy optional
+              upgrades if you want to support us. The free version of Cococart
+              already gives you more than any other ecommerce platform, but we
+              help you take online business even further with our paid plans.
+            </div>
+          </article>
+          <article class="mt-8">
+            <div
+              class="flex items-center justify-between gap-2 p-4 border border-black cursor-pointer faq-title"
+            >
+              <p class="text-xl font-bold">How much does it cost?</p>
+              <i class="fa-solid fa-circle-plus faq-icon"></i>
+            </div>
+            <div class="p-4 border border-t-0 border-black faq-content two">
+              Cococart is free for small businesses! You can buy optional
+              upgrades if you want to support us. The free version of Cococart
+              already gives you more than any other ecommerce platform, but we
+              help you take online business even further with our paid plans.
+            </div>
+          </article>
+          <article class="mt-8">
+            <div
+              class="flex items-center justify-between gap-2 p-4 border border-black cursor-pointer faq-title"
+            >
+              <p class="text-xl font-bold">How much does it cost?</p>
+              <i class="fa-solid fa-circle-plus faq-icon"></i>
+            </div>
+            <div class="p-4 border border-t-0 border-black faq-content three">
+              Cococart is free for small businesses! You can buy optional
+              upgrades if you want to support us. The free version of Cococart
+              already gives you more than any other ecommerce platform, but we
+              help you take online business even further with our paid plans.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- steps -->
+    <section class="py-6">
+      <div class="max-w-3xl px-6 mx-auto">
+        <h3 class="text-5xl font-extrabold text-center">
+          Start a business in minutes. Not months.
+        </h3>
+        <div class="flex flex-col mt-8 space-y-4 sm:flex-row sm:space-y-0">
+          <article class="text-center">
+            <!-- border: 1px solid black; -->
+            <!-- width: fit-content; -->
+            <div
+              class="p-10 border-[3px] w-fit border-black border-solid rounded-3xl text-7xl mx-auto"
+            >
+              ⚡️
+            </div>
+            <p class="mt-8 text-xl font-semibold">Step 1</p>
+            <p class="mt-8 text-xl font-light leading-loose">
+              Choose a unique link for your shop <code>name.cococart.co</code>
+            </p>
+          </article>
+          <!-- line -->
+          <div class="items-center hidden h-full pt-16 sm:flex">
+            <div
+              class="w-16 h-[1px] border-gray-300 border-dashed border"
+            ></div>
+          </div>
+
+          <article class="text-center">
+            <!-- border: 1px solid black; -->
+            <!-- width: fit-content; -->
+            <div
+              class="p-10 border-[3px] w-fit border-black border-solid rounded-3xl text-7xl mx-auto"
+            >
+              ⚡️
+            </div>
+
+            <p class="mt-8 text-xl font-semibold">Step 1</p>
+            <p class="mt-8 text-xl font-light">
+              Choose a unique link for your shop <code>name.cococart.co</code>
+            </p>
+          </article>
+
+          <!-- line -->
+          <div class="items-center hidden h-full pt-16 sm:flex">
+            <div
+              class="w-16 h-[1px] border-gray-300 border-dashed border"
+            ></div>
+          </div>
+
+          <article class="text-center">
+            <!-- border: 1px solid black; -->
+            <!-- width: fit-content; -->
+            <div
+              class="p-10 border-[3px] w-fit border-black border-solid rounded-3xl text-7xl mx-auto"
+            >
+              ⚡️
+            </div>
+
+            <p class="mt-8 text-xl font-semibold">Step 1</p>
+            <p class="mt-8 text-xl font-light">
+              Choose a unique link for your shop <code>name.cococart.co</code>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- pricing section -->
+    <section class="py-6">
+      <div class="grid max-w-3xl grid-rows-2 gap-8 px-6 mx-auto sm:grid-cols-2">
+        <article
+          class="bg-amber-400 border-[3px] border-black rounded-2xl text-center p-8 space-y-4"
+        >
+          <p class="text-lg font-semibold">Free plan</p>
+          <p class="text-6xl font-bold">$0/mo</p>
+          <p class="text-lg font-semibold">Zero introductory fees</p>
+
+          <div class="mx-auto btn-wrapper w-fit">
+            <button class="btn">Start Now</button>
+          </div>
+        </article>
+
+        <article
+          class="bg-white border-[3px] border-black rounded-2xl text-center p-8 space-y-4"
+        >
+          <p class="text-lg font-semibold">Premium</p>
+          <p class="text-6xl font-bold text-amber-400">$5/mo</p>
+          <p class="text-lg font-semibold">Zero introductory fees</p>
+
+          <div class="mx-auto btn-wrapper w-fit">
+            <button class="btn">Pricing</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="py-12 mt-32 bg-amber-400">
+      <div
+        class="flex flex-col-reverse max-w-3xl gap-12 px-6 mx-auto sm:flex-row"
+      >
+        <!-- left -->
+        <div class="sm:w-1/3">
+          <!-- logo -->
+          <img
+            class="w-56"
+            src="https://uploads-ssl.webflow.com/60f35132d5febb6f03ec9d7a/637a3904e86a45e79e450a65_COCOCART_WORDMARK_BLACKANDWHITE.svg"
+            alt="Logo"
+          />
+          <p class="mt-10 text-xl font-light">
+            Simple, beautiful shops for pretty much anything.
+          </p>
+
+          <select name="" id="" class="mt-6 font-bold bg-transparent">
+            <option value="">English</option>
+            <option value="">Espanol</option>
+          </select>
+        </div>
+        <!-- right -->
+        <div
+          class="grid flex-grow grid-rows-4 font-light sm:grid-rows-none sm:grid-cols-4"
+        >
+          <div class="space-y-5">
+            <h4 class="font-semibold">Product</h4>
+            <ul class="space-y-5">
+              <li>Home</li>
+              <li>Pricing</li>
+              <li>Contact</li>
+              <li>Deals</li>
+            </ul>
+          </div>
+
+          <div class="space-y-5">
+            <h4 class="font-semibold">Product</h4>
+            <ul class="space-y-5">
+              <li>Home</li>
+              <li>Pricing</li>
+              <li>Contact</li>
+              <li>Deals</li>
+            </ul>
+          </div>
+
+          <div class="space-y-5">
+            <h4 class="font-semibold">Product</h4>
+            <ul class="space-y-5">
+              <li>Home</li>
+              <li>Pricing</li>
+              <li>Contact</li>
+              <li>Deals</li>
+            </ul>
+          </div>
+
+          <div class="space-y-5">
+            <h4 class="font-semibold">Product</h4>
+            <ul class="space-y-5">
+              <li>Home</li>
+              <li>Pricing</li>
+              <li>Contact</li>
+              <li>Deals</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
+
+<!-- webpack or vite -->
+<!-- package bundling () -->
